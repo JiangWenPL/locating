@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -dynamiclib -Wl,-headerpad_max_install_names  -o libnative-lib.dylib -install_name /Users/jiangwen/Desktop/ROBOT/demo_locate/src/libnative-lib.dylib CMakeFiles/native-lib.dir/apriltags_demo.cpp.o  -L../lib -Wl,-rpath,../lib -lapriltags 
