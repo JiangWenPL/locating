@@ -544,6 +544,14 @@ public:
     if (detections.size())
     {
       // random_shuffle(detections.begin(), detections.end());
+      struct
+      {
+        bool operator()(AprilTags::TagDetection a, AprilTags::TagDetection b) const
+        {
+          return a.id < b.id;
+        }
+      } customLess;
+      std::sort(detections.begin(), detections.end(), customeLess);
       AprilTags::TagDetection detection = detections[0];
       Eigen::Vector3d translation;
       Eigen::Matrix3d rotation;
