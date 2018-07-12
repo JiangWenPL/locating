@@ -308,7 +308,7 @@ public:
     // prepare window for drawing the camera images
     if (m_draw)
     {
-      cv::namedWindow(windowName, 1);
+      // cv::namedWindow(windowName, 1);
     }
   }
 
@@ -447,7 +447,7 @@ public:
         // also highlight in the image
         detections[i].draw(image);
       }
-      imshow(windowName, image); // OpenCV call
+      // imshow(windowName, image); // OpenCV call
     }
   }
   // Load and process a single image
@@ -538,7 +538,7 @@ public:
         // also highlight in the image
         detections[i].draw(image);
       }
-      imshow(windowName, image); // OpenCV call
+      // imshow(windowName, image); // OpenCV call
     }
     double *result = (double *)np_array;
     if (detections.size())
